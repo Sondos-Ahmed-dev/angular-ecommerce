@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15",
+      "description": "Latest iPhone with advanced features",
+      "price": 45000,
+      "stock": 9,
+      "category": "Phones",
+      "image": "iphone15.jpg"
+    },
+    {
+      "id": "2",
+      "name": "MacBook Pro",
+      "description": "Powerful laptop for professionals ,Silver",
+      "price": 85000,
+      "stock": 4,
+      "category": "Laptops",
+      "image": "macbook.jpg"
+    },
+    {
+      "id": "3",
+      "name": "AirPods Pro",
+      "description": "Wireless earphones with noise cancellation",
+      "price": 8500,
+      "stock": 1,
+      "category": "Accessories",
+      "image": "airpods.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 13",
+      "description": "Sleek Dell laptop with 13th Gen Intel processor and premium build",
+      "price": 42000,
+      "stock": 1,
+      "category": "Laptops",
+      "image": "dell.jpg"
+    },
+    {
+      "id": "5",
+      "name": "AirPods Pro 2",
+      "description": "Apple wireless earbuds with active noise cancellation",
+      "price": 8500,
+      "stock": 2,
+      "category": "Accessories",
+      "image": "airpods2.jpg"
+    },
+    {
+      "id": "6",
+      "name": "iPad Air M2",
+      "description": "Apple tablet with M2 chip and 10.9-inch Liquid Retina display",
+      "price": 28000,
+      "stock": 5,
+      "category": "Accessories",
+      "image": "ipad-air.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Xiaomi Redmi Note 13",
+      "description": "Affordable Xiaomi smartphone with excellent performance and value",
+      "price": 12000,
+      "stock": 7,
+      "category": "Phones",
+      "image": "xiaomi-redmi.webp"
+    },
+    {
+      "id": "8",
+      "name": "HP Pavilion Gaming",
+      "description": "HP gaming laptop with dedicated graphics card and 16GB RAM",
+      "price": 35000,
+      "stock": 3,
+      "category": "Laptops",
+      "image": "hp-pavilion.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Apple Magic Mouse",
+      "description": "Wireless Apple mouse with sleek design and high sensitivity",
+      "price": 3500,
+      "stock": 10,
+      "category": "Accessories",
+      "image": "magic-mouse.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Laptops"
+    },
+    {
+      "id": "2",
+      "name": "Accessories"
+    },
+    {
+      "id": "3",
+      "name": "Phones"
+    }
+  ],
+  "cart": []
+}

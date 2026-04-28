@@ -1,0 +1,149 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  color: #e7e7ed;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-primary {
+  color: #00e0ff !important;
+  text-shadow: 0 0 8px rgba(0, 224, 255, 0.7);
+}
+
+hr {
+  border-color: rgba(0, 224, 255, 0.5);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 224, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e7e7ed;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00e0ff, 0 0 35px #00ff9d;
+  z-index: 10;
+}
+
+.card-img-top {
+  border-radius: 1rem 1rem 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #00e0ff;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 224, 255, 0.7);
+}
+
+.card-text {
+  color: #e7e7edcc;
+}
+
+.btn-outline-secondary {
+  border-color: #00e0ff;
+  color: #00e0ff;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #00e0ff;
+  color: #1a1a2e;
+  box-shadow: 0 0 12px #00e0ff;
+}
+
+.alert-warning {
+  background-color: rgba(250, 204, 21, 0.15);
+  border-color: #facc15;
+  color: #facc15;
+  text-shadow: 0 0 5px rgba(250, 204, 21, 0.9);
+}
+
+.btn-outline-danger {
+  border-color: #ff0077;
+  color: #ff0077;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff0077;
+  color: #1a1a2e;
+  box-shadow: 0 0 15px #ff0077;
+}
+
+.card.shadow-lg.bg-light {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 0, 119, 0.3);
+  box-shadow: 0 0 20px rgba(255, 0, 119, 0.5);
+  color: #ff0077;
+  font-weight: 700;
+}
+
+.btn-warning {
+  background: linear-gradient(45deg, #ff0077, #ff4aa6);
+  border: none;
+  color: #1a1a2e;
+  font-weight: 700;
+  box-shadow: 0 0 15px #ff0077, 0 0 30px #ff4aa6;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 25px #ff0077, 0 0 40px #ff4aa6;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.cardb {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 224, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e7e7ed;
+}
+
+.total-price-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 224, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+  color: #e7e7ed;
+  border-radius: 1rem;
+  min-width: 250px;
+}
+
+.text-secondary {
+  color: #fff !important;
+  font-weight: 600;
+}
+.text-dark {
+  color: #fff !important;
+}
+.text-success {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.clear-cart-btn-wrapper .btn-warning {
+  background: linear-gradient(45deg, #ff0077, #ff4aa6);
+  border: none;
+  color: #1a1a2e;
+  font-weight: 700;
+  box-shadow: 0 0 15px #ff0077, 0 0 30px #ff4aa6;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.clear-cart-btn-wrapper .btn-warning:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 25px #ff0077, 0 0 40px #ff4aa6;
+  transform: translateY(-2px) scale(1.05);
+}

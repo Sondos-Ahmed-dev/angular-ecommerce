@@ -1,0 +1,138 @@
+<div class="container my-5 add-product-container">
+  <app-toast #toast></app-toast>
+
+  <h3>Add New Product</h3>
+
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label>Name</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="name"
+        [ngClass]="{ 'is-invalid': f['name'].invalid && f['name'].touched }"
+      />
+      <div
+        *ngIf="f['name'].invalid && f['name'].touched"
+        class="invalid-feedback"
+      >
+        <div *ngIf="f['name'].errors?.['required']">Name is required.</div>
+        <div *ngIf="f['name'].errors?.['minlength']">
+          Name must be at least 3 characters.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label>Description</label>
+      <textarea
+        class="form-control"
+        formControlName="description"
+        [ngClass]="{
+          'is-invalid': f['description'].invalid && f['description'].touched
+        }"
+      ></textarea>
+      <div
+        *ngIf="f['description'].invalid && f['description'].touched"
+        class="invalid-feedback"
+      >
+        <div *ngIf="f['description'].errors?.['required']">
+          Description is required.
+        </div>
+        <div *ngIf="f['description'].errors?.['minlength']">
+          Description must be at least 10 characters.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label>Category</label>
+      <select
+        class="form-control"
+        formControlName="category"
+        [ngClass]="{
+          'is-invalid': f['category'].invalid && f['category'].touched
+        }"
+      >
+        <option value="">Select Category</option>
+        <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+      </select>
+      <div
+        *ngIf="f['category'].invalid && f['category'].touched"
+        class="invalid-feedback"
+      >
+        <div *ngIf="f['category'].errors?.['required']">
+          Category is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="price">Price</label>
+        <input
+          type="number"
+          id="price"
+          formControlName="price"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': f['price'].invalid && f['price'].touched }"
+        />
+        <div
+          *ngIf="f['price'].invalid && f['price'].touched"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f['price'].errors?.['required']">Price is required.</div>
+          <div *ngIf="f['price'].errors?.['min']">
+            Price cannot be negative.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="stock">Stock</label>
+        <input
+          type="number"
+          id="stock"
+          formControlName="stock"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': f['stock'].invalid && f['stock'].touched }"
+        />
+        <div
+          *ngIf="f['stock'].invalid && f['stock'].touched"
+          class="invalid-feedback"
+        >
+          <div *ngIf="f['stock'].errors?.['required']">Stock is required.</div>
+          <div *ngIf="f['stock'].errors?.['min']">
+            Stock must be at least 1.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label>Image File Name</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="image"
+        [ngClass]="{ 'is-invalid': f['image'].invalid && f['image'].touched }"
+      />
+      <div
+        *ngIf="f['image'].invalid && f['image'].touched"
+        class="invalid-feedback"
+      >
+        <div *ngIf="f['image'].errors?.['required']">
+          Image file name is required.
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="btn btn-submit mt-3"
+      type="submit"
+      [disabled]="productForm.invalid"
+    >
+      Add Product
+    </button>
+  </form>
+</div>

@@ -1,0 +1,55 @@
+<div class="container my-5">
+  <app-toast #toast></app-toast>
+
+  <div *ngIf="loading" class="text-center">
+    <div class="spinner-border" role="status"></div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error">
+    <div class="card">
+      <img
+        [src]="'/assets/images/' + product.image"
+        class="card-img-top"
+        alt="{{ product.name }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <p class="card-text">Category: {{ product.category }}</p>
+        <p class="fw-bold">Price: {{ product.price }} EGP</p>
+
+        <p class="card-text">
+          <strong *ngIf="product.stock > 2" class="text-success"
+            >Available</strong
+          >
+
+          <strong *ngIf="product.stock === 2" class="text-warning">
+            Only 2 left!
+          </strong>
+
+          <strong *ngIf="product.stock === 1" class="text-danger"
+            >Last piece!</strong
+          >
+
+          <strong *ngIf="product.stock === 0" class="text-danger">
+            Out of Stock
+          </strong>
+        </p>
+        <div class="card-body-buttons">
+          <a routerLink="/" class="btn btn-secondary me-2">Back</a>
+          <button
+            (click)="addToCart(product)"
+            [disabled]="product.stock === 0"
+            class="btn btn-submit btn-sm"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

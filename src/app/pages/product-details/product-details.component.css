@@ -1,0 +1,116 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+  color: #e7e7ed;
+  animation: cardEntrance 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px) rotateX(10deg);
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid #3c3c66;
+  transition: transform 0.4s ease;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-family: "Orbitron", sans-serif;
+  color: #00e0ff;
+  text-shadow: 0 0 5px rgba(0, 224, 255, 0.6);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.card-text {
+  color: #e7e7edcc;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.fw-bold {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.text-success {
+  color: #22c55e15;
+  text-shadow: 0 0 5px rgba(34, 197, 94, 0.459);
+}
+
+.text-warning {
+  color: #facc1527 !important;
+  text-shadow: 0 0 5px rgba(250, 204, 21, 0.313) !important;
+}
+
+.text-danger {
+  color: #ff002f38 !important;
+  text-shadow: 0 0 7px #ff002f69 !important;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #00e0ff;
+  color: #00e0ff;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: #ff0077;
+  border-color: #ff0077;
+  color: #fff;
+  box-shadow: 0 0 15px #ff0077;
+  transform: translateY(-2px);
+}
+
+@keyframes cardEntrance {
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+.card-body-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.btn-submit {
+  padding: 0.6rem 4rem;
+  border-radius: 0.5rem;
+  background: #00e0ff;
+  border: none;
+  font-weight: 600;
+  color: #1a1a2e;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px) scale(1.03);
+  filter: brightness(1);
+  box-shadow: 0 0 15px #00e1ff7c, 0 0 25px currentColor;
+}

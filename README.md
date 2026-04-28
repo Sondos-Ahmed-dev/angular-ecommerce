@@ -1,4 +1,4 @@
-# App
+<!-- # App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
@@ -24,4 +24,57 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page. -->
+
+🛒 Angular E-Commerce Store
+A fully functional e-commerce web application built with Angular 17 and JSON Server, featuring product listing, cart management, and full CRUD operations.
+
+✨ Features
+
+📦 Browse products with categories filter
+🔍 View detailed product information
+🛒 Add / remove items from cart
+➕ Add new products
+✏️ Edit & delete existing products
+📱 Fully responsive design with Bootstrap 5
+🔔 Toast notifications for user actions
+🚫 Custom 404 Not Found page
+
+
+🖥️ Tech Stack
+Technology   Version
+Angular      17.3
+TypeScript   5.4
+Bootstrap    5.3
+Font Awesome 7.0
+JSON Server  latest
+RxJS         7.8
+
+🚀 Getting Started
+Prerequisites
+Make sure you have the following installed:
+
+Node.js (v18 or higher)
+Angular CLI
+
+bashnpm install -g @angular/cli
+Installation
+
+Clone the repository
+
+bashgit clone https://github.com/Sondos-Ahmed-dev/angular-ecommerce.git
+cd your-repo-name
+
+Install dependencies
+
+bashnpm install
+▶️ Running the App
+
+⚠️ You need to run two terminals at the same time — one for the backend and one for the frontend.
+
+Terminal 1 — Start JSON Server (Backend on port 3000):
+bashnpx json-server --watch db.json --port 3000
+Terminal 2 — Start Angular (Frontend on port 4200):
+bashnpx ng serve
+Then open your browser and navigate to:
+http://localhost:4200
