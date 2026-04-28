@@ -42,13 +42,20 @@ A fully functional e-commerce web application built with Angular 17 and JSON Ser
 
 
 ## Tech Stack
-Technology    Version
-Angular       17.3
-TypeScript    5.4
-Bootstrap     5.3
-Font Awesome  7.0
-JSON Server   latest
-RxJS          7.8
+Technology  
+
+Angular  
+
+TypeScript 
+
+Bootstrap  
+
+Font Awesome  
+
+JSON Server
+
+RxJS       
+
 
 ## Getting Started
 Prerequisites
@@ -63,17 +70,20 @@ Installation
 Clone the repository
 
 git clone https://github.com/Sondos-Ahmed-dev/angular-ecommerce.git
+
 cd angular-ecommerce
 
 ## Install dependencies
 
 npm install
+
  Running the App
 
  You need to run two terminals at the same time — one for the backend and one for the frontend.
 
 Terminal 1 — Start JSON Server (Backend on port 3000):
 npx json-server --watch db.json --port 3000
+
 Terminal 2 — Start Angular (Frontend on port 4200):
 npx ng serve
 Then open your browser and navigate to:
